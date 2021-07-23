@@ -4,21 +4,20 @@
 | ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- | ---------------------------------------- |
 | [reactjs-interview-questions-and-answers](https://arc.dev/interview/reactjs-interview-questions-and-answers) | [sintaxis-markdown](https://markdown.es/sintaxis-markdown/#imagenes) | [online-markdown](https://dillinger.io/) |
 
-
 ## Table of Contents
 
-* [¿what is react?](#what-is-react)
-* [¿what is virtual DOM?](#what-is-virtual-DOM)
-* [¿what is JSX?](#what-is-JSX)
-* [¿What can you tell me about JSX?](#What-can-you-tell-me-about-JSX)
-* [¿what type of components exist in react?](#what-type-of-components-exist-in-react)
-* [¿What happens during the lifecycle of a React component?](#What-happens-during-the-lifecycle-of-a-React-component)
-* [¿What is a CallBack Function?](#What-is-a-CallBack-Function)
-* [¿What is an asynchronous operation?](#What-is-an-asynchronous-operation)
-* [¿SYNCHRONOUS Tasks?](#SYNCHRONOUS-Tasks)
-* [¿What is a Promise?](#What-is-a-Promise)
-* [¿Are you familiar with Flux?](#Are-you-familiar-with-Flux)
-* [Explain a Higher-Order Components?](#Explain-a-Higher-Order-Components)
+- [¿what is react?](#what-is-react)
+- [¿what is virtual DOM?](#what-is-virtual-DOM)
+- [¿what is JSX?](#what-is-JSX)
+- [¿What can you tell me about JSX?](#What-can-you-tell-me-about-JSX)
+- [¿what type of components exist in react?](#what-type-of-components-exist-in-react)
+- [¿What happens during the lifecycle of a React component?](#What-happens-during-the-lifecycle-of-a-React-component)
+- [¿What is a CallBack Function?](#What-is-a-CallBack-Function)
+- [¿What is an asynchronous operation?](#What-is-an-asynchronous-operation)
+- [¿SYNCHRONOUS Tasks?](#SYNCHRONOUS-Tasks)
+- [¿What is a Promise?](#What-is-a-Promise)
+- [¿Are you familiar with Flux?](#Are-you-familiar-with-Flux)
+- [Explain a Higher-Order Components?](#Explain-a-Higher-Order-Components)
 
 ## ¿what is react?
 
@@ -54,8 +53,6 @@ For example, consider adding a node in DOM; react keep a copy of VDOM in memory
 2.  Compare it with older VDOM using diffing.
 3.  Update only different nodes in real DOM.
 4.  Assign new VDOM as an older VDOM.
-
-
 
 ## what is JSX
 
@@ -104,10 +101,6 @@ class MyComponent extends React.Component {
 
 ## what type of components exist in react
 
-| sources                                                                                       |                                                                         |                                                                                     |                                                                                                                               |
-| --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| [source](https://medium.com/how-to-react/react-life-cycle-methods-with-examples-2bdb7465332b) | [source w3schools](https://www.w3schools.com/react/react_lifecycle.asp) | [source definition](https://dev.to/nyamador/react-lifecycle-methods-explained-3oj1) | [react-life-cycle-methods-with-examples](https://medium.com/how-to-react/react-life-cycle-methods-with-examples-2bdb7465332b) |
-
 A component in React is an independent and reusable element. There are also two types of components in React:
 
 Functional components: They only have properties.
@@ -115,9 +108,9 @@ Class components: They have properties, life cycles, and properties.
 
 ## What happens during the lifecycle of a React component
 
-| sources                                                                     |
-| --------------------------------------------------------------------------- |
-| [source react documentation](https://reactjs.org/docs/react-component.html) |
+| sources                                                                                       |                                                                         |                                                                                     |                                                                                                                               |
+| --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| [source](https://medium.com/how-to-react/react-life-cycle-methods-with-examples-2bdb7465332b) | [source w3schools](https://www.w3schools.com/react/react_lifecycle.asp) | [source definition](https://dev.to/nyamador/react-lifecycle-methods-explained-3oj1) | [react-life-cycle-methods-with-examples](https://medium.com/how-to-react/react-life-cycle-methods-with-examples-2bdb7465332b) |
 
 At the highest level, React components have lifecycle events that fall into three general categories:
 
