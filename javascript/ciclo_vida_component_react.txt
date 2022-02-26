@@ -1,0 +1,6 @@
+https://platzi.com/blog/ciclo-de-vida-de-un-componente-de-reactjs/?utm_source=google&utm_medium=cpc&utm_campaign=12915366154&utm_adgroup=&utm_content=&gclid=CjwKCAiAh_GNBhAHEiwAjOh3ZG5nZaznCs03TDyxrS7Jhux8Geg1NwCdhRFYNXIixnPYVezWKtlASBoCnjMQAvD_BwE&gclsrc=aw.ds
+
+
+https://fullstackseries.com/react-js-ciclo-de-vida-de-un-componente/
+
+https://workshops-js-montevideo.gitbook.io/react/ciclo-de-vida-de-los-componentes

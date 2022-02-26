@@ -1,4 +1,10 @@
+https://en.wikipedia.org/wiki/React_(JavaScript_library)
 
+let const var 
+
+https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/
+
+https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var
 
 Aquí es donde entran los Higher-Order Components.
 

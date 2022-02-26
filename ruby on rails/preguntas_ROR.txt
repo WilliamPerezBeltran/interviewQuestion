@@ -1,0 +1,373 @@
+la mejor 
+https://anilpunjabi.tumblr.com/post/25948339235/ruby-and-rails-interview-questions-and-answers
+https://anilpunjabi.tumblr.com/post/25948339235/ruby-and-rails-interview-questions-and-answers
+https://anilpunjabi.tumblr.com/post/25948339235/ruby-and-rails-interview-questions-and-answers
+https://anilpunjabi.tumblr.com/post/25948339235/ruby-and-rails-interview-questions-and-answers
+https://anilpunjabi.tumblr.com/post/25948339235/ruby-and-rails-interview-questions-and-answers
+https://anilpunjabi.tumblr.com/post/25948339235/ruby-and-rails-interview-questions-and-answers
+
+==================
+https://www.careerride.com/ruby-on-rails-interview-questions.aspx
+==================
+https://mindmajix.com/ruby-rails-interview-questions
+==================
+https://github.com/DopplerHQ/awesome-interview-questions#ruby-on-rails
+https://github.com/DopplerHQ/awesome-interview-questions#ruby-on-rails
+
+
+https://github.com/nick-brown/ruby-interview-questions
+==================
+Explicar el proceso de una petición -> lo explican bien desmenuzado
+Describe el asset pipeline -> también un tanto desmenuzado
+Explica el uso de yield y de content_for -> una cosa es usarlo y otra cosa es explicarlo con palabras propias
+
+==================
+https://www.developers.dev/tech-talk/es/web-development/what-makes-ruby-on-rails-great-in-2021.html
+==================
+https://www.it-swarm-es.com/es/ruby-on-rails/que-ruby-y-rails-los-desarrolladores-deben-saber/968202129/
+¿Qué Ruby y Rails los desarrolladores deben saber?
+¿Qué debería saber alguien como Desarrollador de nivel de entrada, nivel medio y Senior que trabaja con Rails? En general: conocimiento teórico, herramientas de desarrollo, gemas y más. ¿Qué problemas suelen presentarse en la entrevista?
+
+ruby-on-rails
+ruby
+ 62
+2 abr. 2010akrisanov
+Senior
+
+Analice y perfile una aplicación para problemas de rendimiento y memoria
+Analiza y perfila una aplicación por problemas de seguridad.
+Comprender el modelado de bases de datos y el análisis de consultas
+Ajuste una implementación de producción (Passenger, Thin, Apache, etc.)
+Comprender y usar Ruby metaprogramación
+Habilidades de mentoría
+Habilidades de comunicación
+Planificación y Estimación
+Nivel medio
+
+Configurar e implementar una aplicación Rails para producción
+Comprenda la pila Rails - devoluciones de llamada, filtros, complementos, motores, gemas, bastidor
+Comprender y usar las asociaciones Active Record
+Comprender y usar ámbitos para definir abstracciones del modelo
+Definir pruebas con pepino y rSpec
+Comprender y usar la orientación a objetos
+Comprender y usar patrones de diseño (explicar qué son, conocer algunos patrones básicos)
+Nivel de entrada
+
+Crear y configurar un entorno Rails
+Utilice generadores para crear modelos, controladores y migraciones.
+Crear y utilizar una migración para administrar la base de datos.
+Cree una prueba unitaria usando rspec/etc
+Crea un modelo y validaciones básicas
+Manejar una solicitud GET utilizando un controlador, modelo y vista
+Manejar una solicitud POST utilizando un controlador, modelo y vista
+HTML básico, CSS y JavaScript
+GIT básico: clonar, confirmar, empujar
+ 139
+
+
+
+==================
+
+https://www.sundevs.com/es/blog/como-contratar-desarrolladores-ruby-on-rails-12-preguntas-clave-entrevista
+https://www.sundevs.com/es/blog/como-contratar-desarrolladores-ruby-on-rails-12-preguntas-clave-entrevista
+https://www.sundevs.com/es/blog/como-contratar-desarrolladores-ruby-on-rails-12-preguntas-clave-entrevista
+https://www.sundevs.com/es/blog/como-contratar-desarrolladores-ruby-on-rails-12-preguntas-clave-entrevista
+
+
+
+Back to Blog
+Cuando queremos contratar a un desarrollador de Ruby On Rails para nuestro equipo, debemos entender ciertos conceptos clave sobre la posición que ocupará esta persona y las responsabilidades que tendrá.
+
+Si el desarrollador que se va a contratar será el encargado de escribir las APIs, esa persona debe tener muy clara la arquitectura que se utilizará, por ejemplo, RESTful, que es la más usada, requiere que el candidato sepa sobre verbos HTTP, además, de status codes, headers y arquitectura cliente-servidor.
+
+Buenas prácticas del desarrollador
+Algo que no debería estar infravalorado son las buenas prácticas que el desarrollador implementa al momento de escribir código en el back-end. Podemos destacar algunas como:
+
+API versioning para estructurar correctamente los endpoints.
+
+Security usando técnicas como validación de datos entrada o implementando CORS.
+
+Authentication mediante algún método como OAuth o JSON Web Tokens.
+
+Preguntas de entrevista
+Las preguntas para entrevistar a un candidato a la posición de desarrollador Ruby On Rails pueden clasificarse por conocimientos propios del lenguaje Ruby y otras enfocadas al framework Rails. Veamos:
+
+Lenguaje Ruby
+¿Cuál es la diferencia entre una clase y un módulo?
+
+¿Cuáles son los tres niveles de control de acceso a métodos para clases y qué significan?
+
+¿Qué significa "self"?
+
+Explique qué son los métodos singleton. ¿Qué es Eigenclass en Ruby?
+
+¿Cuál es la diferencia entre false y nil en Ruby?
+
+Framework Rails
+¿Qué es el Asset Pipeline?
+
+Explica el patrón "Active record".
+
+¿Qué es una Polymorphic Association en Rails?
+
+Explica la diferencia entre optimistic y pessimistic locking en Rails.
+
+Seguridad
+¿En qué consiste el CSRF? ¿Cómo Rails protege a una aplicación en contra de esta falla de seguridad?
+
+¿Cómo debemos almacenar datos inseguros tales como contraseñas?
+
+¿Por qué necesitamos usar HTTPS en lugar de HTTP?
+
+Proyectos en casa como complemento a la entrevista
+Los proyectos en casa son la mejor manera de ver cómo el programador puede implementar soluciones en Ruby On Rails. Lo ideal es darle una tarea y describir los requerimientos que debe cumplir la aplicación.
+
+Un ejemplo de aplicación para hacer en casa puede ser:
+
+Se requiere una aplicación que nos permita gestionar la productividad de los empleados de una empresa gestionando el flujo de tareas en tres tableros que representarán los estados: Ideas, en progreso, terminadas.
+
+Objetivo: Construir un API que permita a los desarrolladores front-end cumplir con las especificaciones visuales.
+
+Requerimientos funcionales
+
+Luego de describir el objetivo, es primordial definir cuáles son las funciones que debe tener la API, esto nos dará una perspectiva de la experiencia que tiene y nos permitirá delimitar la cantidad de tiempo que puede tardar una persona en entregar una aplicación pequeña.
+
+Lo ideal es que la mayoría de los proyectos en casa tengan una duración máxima de una semana, ya que muchos candidatos usualmente están presentando otras entrevistas y puede llegar a ser agotador para ellos entregar varios proyectos a la vez.
+
+Veamos para este caso los requerimientos funcionales:
+
+Quiero poder iniciar sesión y registrarme con mi correo electrónico.
+
+Quiero poder agregar proyectos.
+
+Quiero poder agregar, actualizar y eliminar tareas de los proyectos.
+
+Quiero poder cambiar de estado las tareas con base en los tres estados definidos anteriormente: ideas, en progreso, terminadas.
+
+Requerimientos técnicos
+
+Se debe entregar una API desarrollada en Ruby On Rails en un entorno de producción de AWS.
+
+Debe tener autenticación mediante JWT.
+
+Para finalizar, el desarrollador debería entregar un repositorio, ya sea en Github o Bitbucket, y un ingeniero del equipo o entrevistador técnico debería ser capaz de evaluar cosas como la calidad del código en cuanto definición de nombres de variables, estructura del proyecto, uso de patrones de diseño y prácticas de seguridad implementadas en la API.
+==================
+I think the more important skills for a senior RoR developer is:
+- application architecture design
+- how to make the application scalable
+- broad knowledge of gems, when to use them, pros and cons
+
+1. Code review one of his RoR projects. Make sure he understands the architecture by looking how he breaks the code in the different layers of the stuck. Make sure the code was developed with testing (preferably RSpec).
+
+===============
+It the depends on the role. Seniors or Juniors.
+
+But I always do a simple question to figure out if the applicant has a decent grasp of the language
+
+What is the result of:
+
+a = 1 
+b = 2 
+a ||= b 
+If they can’t answer that. you could detect newbieness.
+
+Basic Knowledge
+
+What is a class?
+open classes? What is it
+super?
+include
+What is an object?
+
+
+
+
+Intermediate Knowledge
+
+What is a module? What are they for? What would be the difference with a class?
+What is a mixin? What is the difference with a module?
+What is the difference between a Block and a Proc?
+What is the difference between a Proc and a lambda?
+There are three ways to call a method, could we describe at least 2?
+
+
+
+
+
+More on programming:
+
+In a class context what is self?
+class WhatIsSelf 
+  def test 
+    puts "At the instance level, self is #{self}" 
+  end 
+ 
+  def self.test 
+    puts "At the class level, self is #{self}" 
+  end 
+end 
+
+What is the result of
+
+x = 1 
+
+class MyClass 
+  y = 2 
+  def foo 
+     z = 4 
+     y ||= 0 
+     puts z + y 
+  end 
+  define_method :bar do |x| 
+     z = 5 
+     y ||= 0 
+     puts z + y + x 
+  end 
+end 
+my_class = MyClass.new 
+my_class.foo 
+my_class.bar(10) 
+my_class.bar 
+
+
+
+
+
+
+Finally you can ask some Rails stuff like:
+
+since which version of rails you are working on. If they tell you rails 5.2 you will know that they have less experience than someone tells you that started to work in rails 1.3.2. But to ensure that you could ask what are the main new features of the new version.
+
+===============
+1.) Rails asset pipeline and how has it evolved over different rails versions.
+2.) He should be able to explain the REST principles and understand how does the router work and map incoming requests.
+3.) Since Rails is also a Rack based application i would want him to exlplain some concepts on Rack middleware too.
+===============
+
+Ruby On Rails Interview Question And Answers:
+
+Q.Explain how (almost) everything is an object in Ruby:
+
+This is a simple question based on complex concept. Here’s your chance to show off your theoretical knowledge and demonstrate that you can have an in depth conversation on class hierarchies, inheritance, methods, encapsulation, polymorphism, and more.
+Q.What’s your favorite testing tool?
+
+The specific answer here is probably not important in and of itself – What’s important is that you can demonstrate familiarity with at least several testing tools, and be able to discuss their individual advantages and weaknesses. Never ventured outside of Rails default testing tools? Take some time to familiarize yourself with tools such as Rspec, FactoryGirl, Capybara, and Cucumber
+
+Q.What are Gems and which are some of your favorites?
+
+Short answer: Gems are packaged bits of Ruby code that you can install to extend or add functionality to your app.
+Be sure to be able to discuss a list of your favorite gems, why you like them, and any customizations you like to add. This is also a good opportunity to highlight any gems you may have published
+
+For more information, click the link below.
+
+http://mindmajix.com/ruby-rails-interview-questions/
+
+390 viewsView 1 upvote
+
+====================
+As long as you have been coding in Rails for a few months, you should be exposed to concepts listed in the following list of questions:
+
+Simple ones, possibly asked during a phone interview
+
+
+What are the benefits of using active records as opposed to native SQL queries. On which occasion should you be choosing one over the other?
+-Explain how RoR scaffolding works and why you would want to use them
+-MVC + rails routing concepts.
+-Give some examples of RoR conventions over configurations options
+-Explain Rails DB Migrate, and the benefits that comes along with that
+
+Slightly more challenging ones:
+
+
+-When would you use a class vs instance variables in RoR ?
+-What are some ActiveRecords callbacks which you are familiar with ?
+-What are the difference between rails template, sub-templates and view helpers ?
+
+Ruby specific questions might also be asked:
+
+
+-what does self mean when used in a class
+Explain what a ||= b means
+
+That being said, there's no better way to prepare for a Rails interview other than to be exposed to it on a constant basis.
+====================
+A senior ruby or Rails engineer is expected to show following proficiency .
+
+Good Clean code skills.
+Good Experience in Testing strategy.
+Good knowledge of design patterns.
+Good concept in OOP. and SOLID principle.
+A good analytic approach to problem solving.
+Apart from these general skills there are few key subjective skills that you may be scanned for.
+
+Use of middlewares.
+Rails engines.
+Rails templates.
+Database specific questions like ActiveRecord Transactions.
+Localization.
+Key Value database storages.
+ActionCable perhaps?
+High level architecture of opening up API.
+Mixins .
+
+But in my experience most of the senior level recruiting will not be done via technical interview but rather sneak into the experience and journey of the interviewee and cross check his approach to solving challenges.
+
+====================
+write a function that transforms this:
+['bob','james','james','susan','susan','susan']
+into this
+{ 'bob' => 1,  'james' => 2, 'susan' => 3 }
+
+This is a really interesting question for an interviewer because it can be answered by in a number of ways depending on the amount exposure to ruby.
+
+A junior candidate might answer the question like this:
+
+def wordcount(words) 
+  count = {} 
+  words.each do |word| 
+    if count[word] 
+      count[word] = count[word] + 1 
+    else 
+      count[word] = 1 
+    end 
+  end 
+  count 
+end 
+
+I would then ask them to take a look at the documentation or the internet and work out how to initialise a hash with a default value.
+Hopefully they could come up with something like this:
+
+def wordcount(words) 
+  count = Hash.new(0) 
+  words.each do |word| 
+    count[word] += 1 
+  end 
+  count 
+end 
+
+The answer from someone who has used ruby for a while might look more like this:
+
+
+def wordcount(words) 
+  words.each_with_object(Hash.new(0)) do |word, memo|  
+    memo[word] += 1 
+  end 
+end 
+
+For most junior to mid positions I am more interested in how someone can take some new learnings about the language and refactor the answer than knowing the best answer straight away.
+
+For a more advanced candidate I might ask them to explore the behaviour of hash a little more and expose some of the interesting edge case properties . . .
+
+
+====================
+
+Victor Liew Jia Hao has provided a well rounded answer to this question and I can only add to it.
+
+
+-Some knowledge on the SOLID principles or at least what it represents
+-Some knowledge on REST and what it represents
+-Understand basic OOP principles - encapsulation, abstraction, polymorphism and inheritance
+-Understand access modifiers and how they are used within the ruby language (Private, public, protected)
+-Why do some methods end with a bang (!) and others with question marks (?), what are they called and what do they do ?
+
+The more you code and learn the better prepared you will be for any interview, always try to obtain feedback after your interview to better prepare you for the Job if you get it or for the next interview. Good luck.
