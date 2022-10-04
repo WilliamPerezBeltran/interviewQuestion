@@ -1,5 +1,12 @@
 # ruby-test
-
+https://adrianmejia.com/ruby-on-rails-architectural-design/
+https://adrianmejia.com/ruby-on-rails-architectural-design/
+https://adrianmejia.com/ruby-on-rails-architectural-design/
+https://adrianmejia.com/ruby-on-rails-architectural-design/
+https://adrianmejia.com/ruby-on-rails-architectural-design/
+https://adrianmejia.com/ruby-on-rails-architectural-design/
+https://runebook.dev/es/docs/rails/guides/action_controller_overview
+https://runebook.dev/es/docs/rails/guides/action_controller_overview
 Test in ruby 
 
 ## Stack
