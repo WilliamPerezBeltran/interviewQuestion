@@ -1,3 +1,10 @@
+
+
+1. las ventajas de arroy funjcion en comparacion de la funcion normal 
+2. diferenciaas de apply y call 
+3. que es una promesa 
+4. diga ejemplos de cuando usar una promesa 
+5. agregar un objecto dentro de un array con destructuring 
 ## Interview question in javascript
 
 | sources                                                                                                      |                                                                      |                                          |

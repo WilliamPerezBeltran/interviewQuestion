@@ -33,10 +33,10 @@
 7. ¿cual es la diferencia entre sort y order?
 7. ¿que es un parcial ?
 7. ¿que puede decir sobre este codigo ?
-	![text](./interview.jpeg){ width=60%,height:30px }
+	![text](./interview.jpeg)
 
 	
 	
-7. ¿?
+7. ¿cual es la diferencia entre sort y order?
 7. ¿?
 7. ¿?
