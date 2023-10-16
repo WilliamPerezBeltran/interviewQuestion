@@ -1,7 +1,17 @@
 
+What is a Proc?
+  
+Answer:
+Essentially, Procs are anonymous methods (or nameless functions) containing code. They can be placed inside a variable and passed around like any other object or scalar value. They are created by Proc.new, lambda, and blocks (invoked by the yield keyword).
 
 
-1. 
+
+
+
+
+1. Is everything in Ruby an object? 
+- Answer:
+Methods are not objects. Blocks are not objects. Keywords are not objects. However, there exist Method objects and Proc objects, and some keywords refer to objects.
 1. ¿que tipo de variables existen en ruby ?
 	- https://strugglingwithruby.blogspot.com/2010/03/variables.html
 	- variables globales  
