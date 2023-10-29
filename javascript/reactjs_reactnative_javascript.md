@@ -1,3 +1,7 @@
+https://chat.openai.com/c/5bf1b675-1bfb-498c-8259-60388153c7fc
+https://chat.openai.com/c/43696ebe-df3c-4697-8db0-b6f3b9667d43
+
+
 JSX (JavaScript XML) is a syntax extension for JavaScript often used with React, a popular JavaScript library for building user interfaces. JSX allows you to write HTML-like code within JavaScript, making it easier to define the structure and appearance of components in a React application.
 
 Here are some key differences between JSX and HTML:
