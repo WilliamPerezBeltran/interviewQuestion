@@ -1,0 +1,4 @@
+https://developero.io/blog/react-solid-example
+https://blog.stackademic.com/spread-operator-in-javascript-and-reactjs-a-quick-guide-8db6a19d5e37
+https://ponyfoo.com/articles/es6#introduction
+https://github.com/jwasham/coding-interview-university?tab=readme-ov-file
