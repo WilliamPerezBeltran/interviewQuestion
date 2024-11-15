@@ -1,5 +1,6 @@
 ============ preguntas javascript ============
 
+1 . ¿explique "call stack" ?
 1. ¿cual es la salida de este codigo y explique "event loop" ?
 
 console.log(1)
@@ -20,6 +21,10 @@ Promise.resolve()
 
 2. ¿ explique el concepto de Promise ?
 
+3. ¿ explique y de un ejemplo de call, y ejemplo ?
+3. ¿ explique y de un ejemplo de , apply y ejemplo ?
+3. ¿ explique y de un ejemplo de bind y ejemplo ?
+3. ¿ explique y de un ejemplo de call, apply y bind ?
 3. ¿ explique y de un ejemplo de call, apply y bind ?
 
 4. tenemos este codigo
