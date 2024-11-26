@@ -1,5 +1,4 @@
-# EPAM-Javascript
-
+# interview question
 Este repositorio contiene una variedad de recursos, ejemplos y desafíos relacionados con el desarrollo en **JavaScript**, **React**, **Ruby**, y **Ruby on Rails**. Es una colección diseñada para ayudarte a mejorar tus habilidades de programación y prepararte para entrevistas en empresas tecnológicas.
 
 ## Estructura del Proyecto
