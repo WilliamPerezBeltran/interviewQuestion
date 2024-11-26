@@ -81,4 +81,3 @@ Este proyecto se distribuye bajo la Licencia MIT. Consulta el archivo `LICENSE` 
 
 ---
 
-¡Esperamos que este repositorio te sea útil para mejorar tus habilidades y prepararte para tus entrevistas!
