@@ -1,0 +1,5 @@
+https://www.quora.com/How-do-I-prepare-for-an-entry-level-Ruby-on-Rails-developer-interview-What-questions-should-I-expect
+https://www.linkedin.com/advice/3/what-best-way-answer-questions-ruby-rails-during-web-yvpkf?lang=es&originalSubdomain=es
+https://www.linkedin.com/pulse/7-consejos-para-prepararte-una-entrevista-de-rails-luis-mejia-/
+https://www.reddit.com/r/rails/comments/z1hhyx/in_your_general_opinion_what_should_a_senior/?tl=es-es&rdt=64398
+https://patrickkarsh.medium.com/ruby-on-rails-top-5-interview-questions-f0f3d94a33c5
