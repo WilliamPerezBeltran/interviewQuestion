@@ -19,3 +19,7 @@ https://www.mockquestions.com/
 - What are your main strengths and weaknesses? 
 -  ?
 
+1. ¿ tell me about yourself?
+2. ¿ what do you like the most about the it world ?
+3. ¿ have you ever had the chance to work woth foreign people ?
+4. ¿ what do you do at your job ?

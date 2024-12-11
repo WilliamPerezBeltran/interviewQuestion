@@ -1,0 +1,37 @@
+Aquí tienes una lista de preguntas comunes para evaluar a un desarrollador junior en Ruby on Rails. Están organizadas por nivel de dificultad y se enfocan en conceptos fundamentales del framework:
+
+Conceptos básicos
+¿Qué es Ruby on Rails y para qué se utiliza?
+¿Qué es MVC (Modelo-Vista-Controlador) y cómo se implementa en Rails?
+¿Qué es un scaffold en Rails? ¿Para qué sirve?
+¿Cómo puedes crear una nueva aplicación en Rails?
+Explica la diferencia entre render y redirect_to en un controlador.
+¿Qué es Active Record y cómo funciona en Rails?
+¿Qué es un archivo de migración en Rails y cómo lo usas?
+
+Rutas y controladores
+¿Cómo defines una ruta en el archivo routes.rb?
+¿Qué diferencias hay entre resources y resource al definir rutas?
+Explica cómo pasar parámetros de una URL a un controlador.
+¿Qué son los strong parameters y por qué son importantes?
+
+Modelos y base de datos
+¿Cómo defines una relación has_many o belongs_to en un modelo?
+¿Qué es una validación en Rails y cómo la implementas?
+¿Cómo puedes usar Rails para hacer una consulta a la base de datos?
+¿Qué es un seed en Rails y para qué se usa?
+
+Vistas
+¿Qué son las partials en Rails y cómo las usas?
+¿Qué es ERB y cómo se utiliza en las vistas de Rails?
+¿Cómo puedes incluir CSS o JavaScript en una aplicación de Rails?
+
+Explica cómo se pasa información desde un controlador a una vista.
+Pruebas y herramientas
+¿Qué herramientas o gems conoces para escribir pruebas en Rails?
+¿Cómo ejecutarías las pruebas de tu aplicación?
+¿Qué es el console de Rails y para qué se usa?
+¿Qué es Bundler y cuál es su función en una aplicación Rails?
+Si necesitas ejemplos prácticos o explicaciones más detalladas de cada pregunta, puedo ayudarte a desarrollarlos.
+
+

@@ -1,3 +1,5 @@
+https://github.com/danielmoralesp/guias-de-rails-espanol
+https://github.com/danielmoralesp/guias-de-rails-espanol/blob/master/fundamentos-de-active-record/1-que-es-active-record.md
 https://www.quora.com/How-do-I-prepare-for-an-entry-level-Ruby-on-Rails-developer-interview-What-questions-should-I-expect
 https://www.linkedin.com/advice/3/what-best-way-answer-questions-ruby-rails-during-web-yvpkf?lang=es&originalSubdomain=es
 https://www.linkedin.com/pulse/7-consejos-para-prepararte-una-entrevista-de-rails-luis-mejia-/
