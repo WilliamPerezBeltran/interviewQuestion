@@ -1,0 +1,78 @@
+What are the falsey values in ruby?
+
+
+a.In Ruby, "zero" and "empty string" are falsey values
+b.In Ruby, "false" and "nil" are falsey values
+c.In Ruby, "true" and "undefined" are falsey values
+
+In Ruby, the falsey values are:
+
+false
+nil
+So the correct answer is: In Ruby, "false" and "nil" are falsey values.
+
+All other values, including 0, empty strings (""), and empty arrays ([]), are considered truthy in Ruby. For example, 0 is truthy, as is an empty string "".
+
+Here’s an example to clarify:
+
+ruby
+Copy code
+if false
+  puts "This won't be printed"
+else
+  puts "false is falsey"
+end
+
+if nil
+  puts "This won't be printed"
+else
+  puts "nil is falsey"
+end
+
+if 0
+  puts "0 is truthy"
+end
+
+if ""
+  puts "Empty string is truthy"
+end
+In the above example, both false and nil are falsey, while 0 and an empty string are truthy.
+
+
+====================================================
+What is the usage of service object in Ruby?
+a. Service objects in Ruby are used for database operations
+b.Separates business logic from controllers/models, simplifying models to data layers, and controllers
+c.Service objects in Ruby are only for handling views.
+
+The correct answer is:
+
+b. Service objects in Ruby are used to separate business logic from controllers/models, simplifying models to data layers, and controllers.
+
+Service objects are a design pattern used in Ruby (especially in Rails) to keep the codebase clean and maintainable. They encapsulate complex business logic or operations that don't belong directly in models or controllers, making it easier to test, debug, and extend the application.
+
+Usage of Service Objects:
+Separation of concerns: By extracting complex logic from models or controllers, service objects make it easier to follow the single responsibility principle.
+Simplify controllers: Service objects handle the heavy lifting of business logic, allowing controllers to focus on handling HTTP requests and responses.
+Simplify models: Models remain lean and focused on representing data, not on performing complex operations.
+Here's an example of a service object in Ruby:
+
+ruby
+Copy code
+# app/services/payment_service.rb
+class PaymentService
+  def initialize(order)
+    @order = order
+  end
+
+  def process_payment
+    # Complex payment processing logic
+    if @order.total_amount > 0
+      # Process payment
+      true
+    else
+      false
+    end
+  end
+end
+In this example, the business logic of processing a payment is extracted into a service object, making the controller simpler and more focused on its primary responsibility.
