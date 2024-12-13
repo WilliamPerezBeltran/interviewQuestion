@@ -26,7 +26,8 @@ https://www.developers.dev/tech-talk/es/web-development/what-makes-ruby-on-rails
 ==================
 https://www.it-swarm-es.com/es/ruby-on-rails/que-ruby-y-rails-los-desarrolladores-deben-saber/968202129/
 ¿Qué Ruby y Rails los desarrolladores deben saber?
-¿Qué debería saber alguien como Desarrollador de nivel de entrada, nivel medio y Senior que trabaja con Rails? En general: conocimiento teórico, herramientas de desarrollo, gemas y más. ¿Qué problemas suelen presentarse en la entrevista?
+¿Qué debería saber alguien como Desarrollador de nivel de entrada, nivel medio y Senior que trabaja con Rails? En general: 
+conocimiento teórico, herramientas de desarrollo, gemas y más. ¿Qué problemas suelen presentarse en la entrevista?
 
 ruby-on-rails
 ruby
@@ -76,12 +77,16 @@ https://www.sundevs.com/es/blog/como-contratar-desarrolladores-ruby-on-rails-12-
 
 
 Back to Blog
-Cuando queremos contratar a un desarrollador de Ruby On Rails para nuestro equipo, debemos entender ciertos conceptos clave sobre la posición que ocupará esta persona y las responsabilidades que tendrá.
+Cuando queremos contratar a un desarrollador de Ruby On Rails para nuestro equipo, debemos entender ciertos conceptos 
+clave sobre la posición que ocupará esta persona y las responsabilidades que tendrá.
 
-Si el desarrollador que se va a contratar será el encargado de escribir las APIs, esa persona debe tener muy clara la arquitectura que se utilizará, por ejemplo, RESTful, que es la más usada, requiere que el candidato sepa sobre verbos HTTP, además, de status codes, headers y arquitectura cliente-servidor.
+Si el desarrollador que se va a contratar será el encargado de escribir las APIs, esa persona debe tener muy clara la 
+arquitectura que se utilizará, por ejemplo, RESTful, que es la más usada, requiere que el candidato sepa sobre verbos HTTP, 
+además, de status codes, headers y arquitectura cliente-servidor.
 
 Buenas prácticas del desarrollador
-Algo que no debería estar infravalorado son las buenas prácticas que el desarrollador implementa al momento de escribir código en el back-end. Podemos destacar algunas como:
+Algo que no debería estar infravalorado son las buenas prácticas que el desarrollador implementa al momento de escribir código 
+en el back-end. Podemos destacar algunas como:
 
 API versioning para estructurar correctamente los endpoints.
 
@@ -90,7 +95,8 @@ Security usando técnicas como validación de datos entrada o implementando CORS
 Authentication mediante algún método como OAuth o JSON Web Tokens.
 
 Preguntas de entrevista
-Las preguntas para entrevistar a un candidato a la posición de desarrollador Ruby On Rails pueden clasificarse por conocimientos propios del lenguaje Ruby y otras enfocadas al framework Rails. Veamos:
+Las preguntas para entrevistar a un candidato a la posición de desarrollador Ruby On Rails pueden clasificarse por conocimientos 
+propios del lenguaje Ruby y otras enfocadas al framework Rails. Veamos:
 
 Lenguaje Ruby
 ¿Cuál es la diferencia entre una clase y un módulo?
@@ -120,19 +126,24 @@ Seguridad
 ¿Por qué necesitamos usar HTTPS en lugar de HTTP?
 
 Proyectos en casa como complemento a la entrevista
-Los proyectos en casa son la mejor manera de ver cómo el programador puede implementar soluciones en Ruby On Rails. Lo ideal es darle una tarea y describir los requerimientos que debe cumplir la aplicación.
+Los proyectos en casa son la mejor manera de ver cómo el programador puede implementar soluciones en Ruby On Rails. 
+Lo ideal es darle una tarea y describir los requerimientos que debe cumplir la aplicación.
 
 Un ejemplo de aplicación para hacer en casa puede ser:
 
-Se requiere una aplicación que nos permita gestionar la productividad de los empleados de una empresa gestionando el flujo de tareas en tres tableros que representarán los estados: Ideas, en progreso, terminadas.
+Se requiere una aplicación que nos permita gestionar la productividad de los empleados de una empresa gestionando 
+el flujo de tareas en tres tableros que representarán los estados: Ideas, en progreso, terminadas.
 
 Objetivo: Construir un API que permita a los desarrolladores front-end cumplir con las especificaciones visuales.
 
 Requerimientos funcionales
 
-Luego de describir el objetivo, es primordial definir cuáles son las funciones que debe tener la API, esto nos dará una perspectiva de la experiencia que tiene y nos permitirá delimitar la cantidad de tiempo que puede tardar una persona en entregar una aplicación pequeña.
+Luego de describir el objetivo, es primordial definir cuáles son las funciones que debe tener la API, esto nos dará 
+una perspectiva de la experiencia que tiene y nos permitirá delimitar la cantidad de tiempo que puede tardar una persona 
+en entregar una aplicación pequeña.
 
-Lo ideal es que la mayoría de los proyectos en casa tengan una duración máxima de una semana, ya que muchos candidatos usualmente están presentando otras entrevistas y puede llegar a ser agotador para ellos entregar varios proyectos a la vez.
+Lo ideal es que la mayoría de los proyectos en casa tengan una duración máxima de una semana, ya que muchos candidatos 
+usualmente están presentando otras entrevistas y puede llegar a ser agotador para ellos entregar varios proyectos a la vez.
 
 Veamos para este caso los requerimientos funcionales:
 
@@ -150,14 +161,17 @@ Se debe entregar una API desarrollada en Ruby On Rails en un entorno de producci
 
 Debe tener autenticación mediante JWT.
 
-Para finalizar, el desarrollador debería entregar un repositorio, ya sea en Github o Bitbucket, y un ingeniero del equipo o entrevistador técnico debería ser capaz de evaluar cosas como la calidad del código en cuanto definición de nombres de variables, estructura del proyecto, uso de patrones de diseño y prácticas de seguridad implementadas en la API.
+Para finalizar, el desarrollador debería entregar un repositorio, ya sea en Github o Bitbucket, y un ingeniero del 
+equipo o entrevistador técnico debería ser capaz de evaluar cosas como la calidad del código en cuanto definición 
+de nombres de variables, estructura del proyecto, uso de patrones de diseño y prácticas de seguridad implementadas en la API.
 ==================
 I think the more important skills for a senior RoR developer is:
 - application architecture design
 - how to make the application scalable
 - broad knowledge of gems, when to use them, pros and cons
 
-1. Code review one of his RoR projects. Make sure he understands the architecture by looking how he breaks the code in the different layers of the stuck. Make sure the code was developed with testing (preferably RSpec).
+1. Code review one of his RoR projects. Make sure he understands the architecture by looking how he breaks the code 
+in the different layers of the stuck. Make sure the code was developed with testing (preferably RSpec).
 
 ===============
 It the depends on the role. Seniors or Juniors.
