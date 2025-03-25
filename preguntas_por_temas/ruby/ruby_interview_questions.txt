@@ -1,0 +1,80 @@
+Fundamentos de Ruby:
+
+¿Cuáles son las principales diferencias entre || y or en Ruby? ¿En qué situaciones usarías cada uno?
+Explica la diferencia entre los métodos map, collect, select y find en Ruby. ¿Cómo y cuándo usarías cada uno?
+OOP (Programación Orientada a Objetos):
+
+¿Cómo definirías una clase en Ruby? Proporcióname un ejemplo de una clase con atributos y métodos.
+¿Cuál es la diferencia entre un attr_reader, attr_writer, y attr_accessor?
+¿Qué es un módulo en Ruby y cómo se usa? ¿En qué se diferencia de una clase?
+¿Qué es la herencia en Ruby? ¿Puedes darme un ejemplo de cómo usarla?
+Metodología y buenas prácticas:
+
+¿Qué son las excepciones en Ruby y cómo manejarlas adecuadamente?
+¿Cómo organizarías y estructurarías una aplicación Ruby on Rails de tamaño medio? ¿Qué patrones de diseño seguirías?
+Ruby on Rails (si se aplica):
+
+Explica el ciclo de vida de una solicitud en Rails. ¿Cómo Rails maneja una petición HTTP desde el momento en que llega hasta que se devuelve la respuesta?
+¿Cuál es la diferencia entre has_many, has_one, y belongs_to en las asociaciones de Rails?
+¿Qué es una migración en Rails y cómo la utilizarías?
+Rendimiento y optimización:
+
+¿Cómo puedes mejorar el rendimiento de una aplicación Ruby? ¿Qué herramientas utilizarías para medir y optimizar el código?
+¿Qué son los bloqueos en Ruby y cómo gestionarlos?
+Testing:
+
+¿Qué es RSpec y cómo lo usarías para probar una clase o un controlador en Rails?
+¿Qué diferencias encuentras entre pruebas unitarias y pruebas de integración en Rails?
+Ruby avanzado:
+
+¿Qué es un "Proc" o un "lambda" en Ruby? Explica la diferencia entre ambos y da un ejemplo de uso.
+¿Cómo se manejan los hilos (threads) en Ruby? ¿Cuál es la diferencia entre un Thread y un Fiber?
+Estas preguntas cubren varios aspectos clave de Ruby y Ruby on Rails, desde conceptos básicos hasta más avanzados, lo cual ayudaría a evaluar tus habilidades en la plataforma.
+
+
+
+
+
+
+ruby avanzado 
+
+Metaprogramación:
+
+¿Qué es la metaprogramación en Ruby y cómo la utilizarías? ¿Puedes darme un ejemplo donde usarías define_method o method_missing?
+Explica cómo y por qué usarías eval en Ruby. ¿Qué precauciones tomarías al usarlo?
+¿Qué es un "singleton method"? ¿Cómo se crea y cuándo lo usarías?
+Manejo de bloques y Proc/Lambda:
+
+¿Cuál es la diferencia entre un bloque y un Proc en Ruby? ¿Y entre un Proc y una lambda? ¿Cómo manejan los retornos y las excepciones de manera diferente?
+¿Qué es un "cierre" (closure) en Ruby? ¿Cómo se comportan los bloques, Procs, y lambdas como cierres?
+Garbage Collection:
+
+¿Cómo funciona el garbage collector en Ruby? ¿Qué tipos de recolectores existen y cómo afectan el rendimiento de la aplicación?
+Explica cómo puedes mejorar el rendimiento en aplicaciones Ruby con respecto al manejo de memoria.
+Threads y Concurrencia:
+
+En Ruby, ¿qué diferencias existen entre Thread y Fiber? ¿Cuándo usarías uno sobre el otro?
+¿Cómo manejas la concurrencia en Ruby y qué bibliotecas usarías para gestionar múltiples hilos o procesos?
+Rendimiento y Optimización:
+
+¿Qué técnicas utilizarías para mejorar el rendimiento de una aplicación Ruby en producción?
+¿Cómo optimizarías el uso de la memoria en una aplicación Ruby?
+Ruby Internals:
+
+Explica cómo Ruby maneja los objetos inmutables y mutables. ¿Cómo se comporta un objeto cuando se pasa por referencia?
+¿Qué es un "Object Space" en Ruby? ¿Cómo se puede interactuar con él para obtener información sobre los objetos en memoria?
+Cadenas y Expresiones Regulares:
+
+¿Cómo funcionan las expresiones regulares en Ruby? ¿Cómo optimizarías una expresión regular compleja en términos de rendimiento?
+Explica cómo Ruby maneja la manipulación de cadenas y cómo puedes modificar el comportamiento predeterminado de la concatenación de cadenas.
+Métodos de bajo nivel y optimización:
+
+Explica el concepto de "duck typing" y cómo Ruby lo utiliza. ¿Cómo afecta esto a la seguridad de tipos en Ruby?
+¿Qué es un "memoization" en Ruby y cómo lo implementarías? ¿Cuándo usarías esta técnica en un contexto de alto rendimiento?
+
+
+
+
+
+
+

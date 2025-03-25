@@ -1,0 +1,99 @@
+Fundamentos de JavaScript
+
+¿Qué es el "hoisting" en JavaScript y cómo funciona?
+Explica la diferencia entre var, let, y const.
+¿Cuál es la diferencia entre == y === en JavaScript?
+¿Qué es el scope en JavaScript y cómo se relaciona con el "lexical scope"?
+Funciones y manejo de callbacks
+
+Explica la diferencia entre una función normal y una función de flecha (arrow function).
+¿Qué es un closure en JavaScript?
+¿Cómo manejarías un callback que depende de una operación asincrónica, como una solicitud HTTP?
+Asincronía y Promesas
+
+¿Cómo funciona el "event loop" en JavaScript?
+Explica qué es una Promesa y cómo se puede manejar con .then() y .catch().
+¿Qué es async/await y cómo lo usarías para manejar código asincrónico?
+Arrays y objetos
+
+¿Cuál es la diferencia entre un array y un objeto en JavaScript?
+¿Cómo agregarías un elemento al final de un array y al principio?
+Explica la diferencia entre map(), filter(), y reduce() y da ejemplos de uso.
+Desestructuración
+
+¿Qué es la desestructuración en JavaScript y cómo se usa tanto para objetos como para arrays?
+ES6 y nuevas características
+
+Explica qué son las "template literals" y cómo se usan en JavaScript.
+¿Qué son los módulos en JavaScript y cómo se importan/exportan?
+Manejo de errores
+
+¿Cómo manejarías errores en JavaScript? Explica el uso de try/catch y su aplicación.
+React (si es relevante para tu rol)
+
+¿Cómo manejarías el estado en un componente de React utilizando useState y useEffect?
+¿Qué es el "Virtual DOM" en React y cómo optimiza el rendimiento?
+Explica el ciclo de vida de un componente en React.
+Estas preguntas están orientadas a medir tus conocimientos en los aspectos clave de JavaScript y tu capacidad para aplicar conceptos en situaciones prácticas.
+
+
+
+
+
+
+You said:
+de javascript preguntas avanzadas 
+ChatGPT said:
+Para una entrevista técnica avanzada de JavaScript, las preguntas tienden a profundizar en conceptos complejos y el uso de JavaScript en aplicaciones reales. Aquí tienes algunas preguntas avanzadas que podrían surgir:
+
+Contexto de ejecución y "this"
+
+Explica cómo funciona el contexto de ejecución en JavaScript y cómo afecta al valor de this.
+¿Cómo funciona el bind(), call(), y apply() en relación con this? ¿Cuál es la diferencia entre ellos?
+Cierre (Closures) y Funciones
+
+¿Cómo funciona un closure en JavaScript y por qué es importante para el manejo de datos privados?
+¿Puedes darme un ejemplo práctico donde un closure sea útil?
+¿Cómo funcionan las funciones generadoras (function*) y cómo se usan con yield?
+Asincronía avanzada
+
+¿Qué es una "microtask queue" y una "macrotask queue" en JavaScript? ¿Cuál es su diferencia y cómo impacta el rendimiento?
+¿Qué es el async iterators y cómo se usan con for await...of?
+¿Cómo se implementa un debounce o un throttle en JavaScript y en qué situaciones los usarías?
+Optimización del rendimiento
+
+¿Qué técnicas usarías para optimizar el rendimiento de una aplicación JavaScript de una sola página (SPA)?
+¿Qué es la "memoria compartida" en JavaScript y cómo se puede usar para mejorar el rendimiento en aplicaciones grandes?
+¿Cómo evitarías problemas de "callback hell" y qué técnicas existen para estructurar mejor el flujo asincrónico en JavaScript?
+Manejo de memoria y Garbage Collection
+
+¿Cómo maneja JavaScript la recolección de basura? Explica los diferentes tipos de recolectores y sus implicaciones para la optimización de memoria.
+¿Qué son los fugas de memoria y cómo puedes evitarlas en una aplicación JavaScript?
+Patrones de diseño y arquitectura
+
+¿Puedes explicar algunos patrones de diseño en JavaScript como el Módulo, Singleton, o Observer?
+¿Cómo usarías el patrón Promise.all() para manejar múltiples promesas en paralelo de manera eficiente?
+Web APIs y optimización
+
+Explica cómo funcionan las Web Workers en JavaScript y en qué escenarios serían útiles.
+¿Qué son los Service Workers y cómo se utilizan para la creación de aplicaciones web progresivas (PWA)?
+¿Qué son los WebSockets y cómo los implementarías para manejar comunicaciones bidireccionales en tiempo real?
+V8 y el Motor de JavaScript
+
+Explica cómo funciona el motor V8 y el proceso de compilación Just-In-Time (JIT) en JavaScript.
+¿Cómo afectan las optimizaciones de V8 (como la inlining o la compilación dinámica) al rendimiento de las aplicaciones JavaScript?
+Memory Leaks y Profiling
+
+¿Cómo puedes detectar y resolver una fuga de memoria en una aplicación JavaScript utilizando herramientas como el Chrome DevTools o Node.js inspector?
+Explica cómo realizar un profiling de rendimiento en una aplicación JavaScript. ¿Qué herramientas y técnicas utilizarías?
+Lenguaje Interno y ECMAScript
+
+¿Cómo funciona el Event Loop en JavaScript y cómo interactúan las diferentes fases del ciclo de vida del código asincrónico (callbacks, promises, etc.)?
+¿Qué es el Memory Heap y cómo se relaciona con el Call Stack en el contexto del Event Loop?
+
+
+
+
+
+
+

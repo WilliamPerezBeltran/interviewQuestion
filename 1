@@ -1,0 +1,110 @@
+=begin
+
+* what is the function of modules in ruby ? 
+	- The function of a modules is encapsules behaviour with diferentes elements in ruby for example with methods, classes or Constants.
+	Also it provides a mechanism for multiple inheritance and the most import one is that the module it uses to reuse code.
+
+* What is the differences between modules and class ? 
+	-Modules is a block of code, with module we can not instance a module we extend it, require it. On the other hand a class is a blueprint to create objects.
+  A class has differents features like attributes, instance methods, class methods and it is a important part of OOP (Object-oriented programming)
+
+* What is the difference between extend and include ? 
+include => Add the module's method as instance methods to the including class. it means that only when we instance the class to get a object we can get access to the method.
+extend => Add the module's method as class methods to the including class. 
+
+=end
+
+# * W
+module MyModule 
+	def fly # => instance methods 
+		"fly"
+	end
+	
+	def run # => instance methods
+		"run"
+	end
+	
+	def class_fly # => class methods 
+		"class method fly"
+	end
+	
+  def class_run # => class methods 
+		"class method run"
+	end
+
+	def self.class_method
+		"i am a class method"
+	end
+end
+
+class Animal 
+	include MyModule
+	extend MyModule
+end
+
+my_instance = Animal.new
+p my_instance.fly
+p my_instance.run
+p Animal.class_fly
+p Animal.class_run
+p MyModule.class_method
+
+
+module My
+	def instance_method
+		"instance method"
+	end
+	
+	def class_method
+		"class  method"
+	end
+end
+
+class Person
+	include My
+	include My
+end
+inst = Person.new 
+
+p inst.instance_method
+p Person.class_method
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

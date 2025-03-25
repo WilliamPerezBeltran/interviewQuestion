@@ -1,0 +1,41 @@
+Conceptos básicos de GraphQL:
+
+¿Qué es GraphQL y cómo se diferencia de REST?
+¿Cuáles son las principales ventajas de usar GraphQL en lugar de RESTful APIs?
+Explica cómo funcionan las consultas (queries) en GraphQL.
+¿Qué es una mutación en GraphQL y cuándo se utilizaría?
+Tipos de datos y esquema:
+
+¿Qué es un esquema en GraphQL y cómo se define?
+¿Qué son los tipos Query, Mutation y Subscription?
+¿Qué son los tipos scalars, objetos, y enumeraciones en GraphQL?
+¿Cómo defines una relación entre dos tipos de datos (por ejemplo, uno a muchos)?
+Operaciones avanzadas:
+
+¿Qué son las suscripciones en GraphQL y en qué casos se usarían?
+¿Cómo manejarías la paginación en una consulta GraphQL?
+Explica cómo funcionan las directivas como @include y @skip en GraphQL.
+¿Qué son los fragments en GraphQL y cómo se utilizan?
+Optimización y buenas prácticas:
+
+¿Cómo manejarías la optimización de consultas en un servidor GraphQL?
+¿Qué es el problema de "over-fetching" y "under-fetching" en GraphQL y cómo se puede evitar?
+¿Qué estrategias emplearías para manejar la autorización y autenticación en GraphQL?
+Desarrollo y herramientas:
+
+¿Cómo harías pruebas en un servidor GraphQL?
+¿Qué bibliotecas o herramientas has usado para implementar un servidor GraphQL? (por ejemplo, Apollo Server, GraphQL.js)
+Explica cómo se gestionan los errores en GraphQL.
+Escalabilidad y rendimiento:
+
+¿Cómo mejorarías el rendimiento de un servidor GraphQL?
+¿Qué es el “N+1 query problem” en GraphQL y cómo lo resolverías?
+¿Cómo manejarías las consultas complejas o pesadas en GraphQL para asegurar que no afecten el rendimiento del servidor?
+
+
+
+
+
+
+
+
