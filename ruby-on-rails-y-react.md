@@ -1,3 +1,95 @@
+Aquí tienes un conjunto de preguntas comunes que suelen hacer en entrevistas para desarrollador de software con Ruby on Rails y React. Están organizadas por categoría:
+
+🧠 Preguntas Técnicas – Ruby on Rails
+¿Qué es Active Record y cómo funciona?
+
+¿Qué es el problema N+1 y cómo lo solucionas?
+
+¿Cómo defines relaciones has_many :through y has_and_belongs_to_many?
+
+¿Qué sabes de concerns y service objects? ¿Cuándo los usarías?
+
+¿Cómo gestionas background jobs? ¿Qué usas: Sidekiq, DelayedJob, etc.?
+
+¿Cómo configuras y trabajas con rutas anidadas en Rails?
+
+¿Cómo haces testing en Rails? (RSpec, Minitest, FactoryBot)
+
+⚛️ Preguntas Técnicas – React.js
+¿Cuál es la diferencia entre componentes de clase y funcionales?
+
+¿Qué son los hooks y cuáles usas con frecuencia?
+
+¿Cómo manejas el estado global? (Redux, Context API, Zustand, etc.)
+
+¿Qué patrón usarías para comunicación entre componentes no relacionados?
+
+¿Cómo optimizas el rendimiento en una app React?
+
+¿Cómo manejas side effects? (useEffect, react-query, etc.)
+
+¿Cómo configuras lazy loading en React?
+
+🔗 Full Stack / Integración RoR + React
+¿Cómo conectas un front React con un backend en Rails (API-only)?
+
+¿Cómo manejas autenticación JWT entre frontend y backend?
+
+¿Cómo estructurarías una app full-stack en monorepo vs repos separados?
+
+¿Qué estrategias usas para manejo de errores entre cliente y servidor?
+
+🧪 Testing y Calidad
+¿Cómo pruebas tus endpoints en Rails?
+
+¿Cómo haces pruebas unitarias y de integración en React (Jest, Testing Library)?
+
+¿Cómo automatizas pruebas en el CI/CD pipeline?
+
+☁️ DevOps / Despliegue
+¿Qué sabes sobre despliegue en Heroku, AWS, Docker, etc.?
+
+¿Has configurado pipelines con GitHub Actions, GitLab CI o Jenkins?
+
+¿Cómo manejarías variables de entorno y secretos?
+
+🗣️ Preguntas de comportamiento
+Cuéntame sobre un bug difícil que resolviste.
+
+¿Cómo manejas los conflictos en equipo?
+
+¿Cómo estimas y priorizas tareas?
+
+¿Has trabajado con metodologías ágiles? ¿Cómo fue tu rol en el equipo?
+
+¿Quieres que armemos respuestas modelo o simulacros para alguna de estas preguntas?
+
+
+
+
+
+
+
+
+
+Ask ChatGPT
+Unlock more with Plus
+ChatGPT Plus gives you higher limits, smarter models, and Sora for video.
+
+Get Plus
+
+
+
+
+Tools
+
+
+
+ChatGPT can make mistakes. Check important info.
+
+
+
+
 # Preguntas comunes de entrevista para desarrollador Ruby on Rails + React
 
 ## Preguntas Técnicas – Ruby on Rails

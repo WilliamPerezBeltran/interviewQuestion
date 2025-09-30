@@ -1,0 +1,21 @@
+📌 My Interview Experience – Java Developer
+I recently went through a Java Developer interview and thought it would be useful to share the questions I was asked.
+ Hopefully this helps anyone else preparing for similar roles 🚀
+💡 Technical Questions I got:
+ 1️⃣ Explain OOP concepts with examples.
+ 2️⃣ What are the new features in Java 8?
+ 3️⃣ How do you handle exceptions in Spring Boot?
+ 4️⃣ REST API design best practices.
+ 5️⃣ How do you manage communication between microservices?
+ 6️⃣ SQL query to fetch the 2nd highest salary.
+ 7️⃣ Scenario-based question on project migration.
+ 8️⃣ How do you secure microservices?
+ 9️⃣ Explain the concept of Multithreading.
+ 🔟 Difference between map and flatMap.
+💡 My takeaways / tips:
+ ✅ Revise your fundamentals (Java, Spring Boot, Microservices).
+ ✅ Be prepared to explain your projects in detail – they dig deep.
+ ✅ Practice SQL queries & basic coding challenges.
+ ✅ Stay calm – you don’t need to know everything.
+I really think sharing experiences makes the journey easier for everyone 🚀
+ Curious to hear from you too – what kind of questions have you faced in interviews recently?
