@@ -1,0 +1,6 @@
+- Concepto
+- Historia del concepto / Por qué lo inventaron
+- Ejemplo
+- Ventajas
+- Desventajas
+- Ejemplo en producción
