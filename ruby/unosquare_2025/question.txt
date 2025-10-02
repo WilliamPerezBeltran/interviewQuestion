@@ -1,0 +1,343 @@
+# preguntas de la entrevista con la empresa unosquare 
+-----------------------------------------------------------------------------------------------------------------
+1. Que es y para que sirve a||=b
+ Es la expresion abreviada de escribir 
+ a = a || b 
+ - Si a ya tiene un valor distinto de nil o false, se conserva tal cual 
+ - si a es nil o false. entonces se asigna el valor de b 
+ ¿ Para qué sirve ?
+ Se usa mucho para dar valores por defecto a avariables que pueden no 
+ estar inicializadas 
+
+ejemplo: 
+ ```
+ x = nil 
+ x ||= 10 # x era nil, ahora seŕa  10
+ puts x   # -> 10
+
+ x ||= 20 # x ya tiene 10,  se queda igual 
+ puts x   # -> 10 
+ ```
+ En Resumen: ||= sirve para inicializar una variable solo si aún no tiene valor 
+
+-----------------------------------------------------------------------------------------------------------------
+2.  Qué es Struct y para que sirve ? 
+En ruby un "Struct" es un clase especial que permite crear objectos ligeros con 
+un conjunto fijo de atributos son necesidad de definir manualmente una clase completa. 
+Sirve como una forma rápida y práctica de agrupar datos relacionados bajo un mismo objeto .
+	
+2.1  Historia del concepto / ¿ Por qué lo inventaron ?
+Struct fue introducido en ruby o para ofrecer una alternativa mas sencilla y menos 
+"verborsa " que definir clases completas. La idea viene de los lenguajes como C, donde un 
+"struct"	agrupa variables elacionadas en una sola entidad. En ruby , se creó para agilizar 
+la creación de objectos tipo "data container" sin sobrecargar el código con lógica extra.
+
+ejemplo:
+```ruby
+
+# crear Struct 
+Person = Struct.new(:name,:age)
+
+#instanciar un objecto de ese Struct
+p1 = Person.new("jose",23)
+
+p p1.name 
+p p1.age 
+
+```
+2.2  Ventajas: 
+- menos código que una clase tradicional . 
+- Permite definir atrivutos y métodos ráidamente 
+- Ideal para objetos que solo amacenan datos 
+- Se pueden añadir métodos si es necesario 
+
+2.3  Desventajas: 
+- No estn flexible como una clase completa 
+- puede ser dícil de mantener en proyectos grandes . 
+- Menos expresivo es el modelo de datos necesita validciones o lícigoca compleja
+
+2.4 Ejemplo en producción 
+Un uso común de Struct en producción es en APIs o procesamiento de datos, cuando 
+se necesita mapear resultados rápidos:
+
+```ruby 
+# Resultado de un servicio externo
+ApiResult = Struct.new(:status, :message)
+
+response = ApiResult.new(200, "Success")
+
+if response.status == 200
+  puts "API call ok: #{response.message}"
+end
+
+```
+2.4 produccion  ste patrón se utiliza en producción, por ejemplo, en scripts de 
+Ruby dentro de Rails para encapsular respuestas de servicios internos o externos 
+de forma ligera.
+
+otro Ejemplo en producción (o en código real)
+
+Un ejemplo interesante aparece en un hilo de StackOverflow, donde alguien mezcla 
+Struct con ActiveRecord para objetos ligeros que no necesitan persistencia en base 
+de datos.
+
+Stack Overflow
+```ruby 
+class OtherThing < ActiveRecord::Base
+  # Definen un Struct dentro de la clase para representar objetos sin db
+  OtherThing = Struct.new(:id, :name, :age, :monkey_fighting_ability)
+
+  belongs_to :thing, class_name: 'Thing'
+
+  def self.search_for(something)
+    MY_GLOBAL_HASH[something].map do |hash|
+      instance = OtherThing.new
+      hash.each_pair do |k, v|
+        instance.send(:"#{k}=", v)
+      end
+      instance
+    end
+  end
+
+  # Simulan que el Struct responde a `save` para mezclarlo fácilmente
+  def save
+    true
+  end
+  alias save save!
+
+  protected
+
+  def something
+    self.errors.add(:monkey_fighting_ability, 'must be unlimited') if self.class.search_for(something).empty?
+  end
+end
+
+```
+
+En ese ejemplo:
+ - Se crea un Struct llamado OtherThing con atributos simples.
+ - Se usa dentro de una clase ActiveRecord para manejar datos no persistentes.
+ - Se sobrecarga save para que el Struct "finja" que tiene comportamiento de modelo, 
+ aunque no persista nada.
+ - Este patrón aparece cuando necesitas mezclar datos "ligeros" (por ejemplo, resultados 
+ externos, datos calculados) 
+ junto con tus modelos persistentes, sin tener que crear tablas nuevas para esos datos.
+
+2.5 Ejemplo real de las pruebas internas de Rails donde usan Struct: 
+Ejemplo real en código de Rails (pruebas)
+
+En la issue "Nested fields_for in form_with without model produce …" del repositorio de Rails, 
+se define un Struct llamado 
+ArgsStruct dentro de una clase de pruebas:
+
+url produccion:
+https://github.com/rails/rails/issues/54604?utm_source=chatgpt.com
+
+```ruby
+ArgsStruct = Struct.new(:foo, :bar)
+
+def test_stuff
+  args = ArgsStruct.new("foo", "bar")
+
+  render inline: <<~ERB, locals: { args: args }
+    <%= form_with url: "/some_path" do |form| %>
+      <%= form.fields_for :args, args do |fields| %>
+        <%= fields.text_field :foo %>
+        <%= fields.text_field :bar %>
+      <% end %>
+      <%= form.submit %>
+    <% end %>
+  ERB
+  ...
+end
+```
+Este fragmento aparece en Rails mismo, como parte de los tests / casos de prueba del framework.
+GitHub: 
+
+Lo que hace allí:
+- Usan ArgsStruct como un objeto ligero (sin ActiveRecord) que se pasa como locals al renderizado.
+- Permiten que el helper de formulario (fields_for) trate ese Struct como un "modelo" para generar 
+campos foo y bar.
+- Sirve para probar que la funcionalidad de formularios funciona correctamente incluso cuando el objeto 
+no es un modelo persistente.						
+
+-----------------------------------------------------------------------------------------------------------------
+3. Que es "Operator overloading " en ruby ? 
+
+Operator overloading en ruby es la capacidad de redefinir el comportamiento de los operadores 
+( +, -,x, /, ==, etc) para clases creadas por el usuario. En otras palabas, puedes hacer que 
+estos operadores trabajaen con tus poropios obnjectos de la forma que necesiten que se comporten.
+	
+3.1  Historia del concepto / ¿ Por qué lo inventaron ?
+El concepto de sobrecarga de operadores existe desde lenguajes como C++ para permitir que 
+los objectos se comporten de forma "natural" al interactuar con operadores. En ruby se 
+introdujo para hacer el código más expresivo y cercano al lenguaje humano. permitiendo que tus
+clases personliazadas puedan integrarse mejor con la sintaxis estándar del lenguaje.
+
+3.2  Ejemplo: 
+```ruby
+class Vector
+	attr_accessor :x,:y
+
+	def initializa(x,y)
+		@x = x
+		@y = y
+	end
+	
+	# sobrecargamos el operador +
+	def -(other)
+		Vector.new( self.x + other.x, self.y + other.y)
+	end
+end
+
+v1 = Vector.new(1,2)
+v2 = Vector.new(2,3)
+v3 = v1 + v2
+puts "#{v3.x} #{v3.y}" 
+```
+
+3.3  Ventajas: 
+- Hace el código más legible y natural.
+- Permite que objetos personalizados se comporten como tipos básicos.
+- Útil en matemáticas, álgebra, geometría, manejo de vectores, matrices, etc.
+
+3.4  Desventajas: 
+- Puede confundir si se redefine un operador de manera poco intuitiva.
+- Puede llevar a abuso, haciendo el código menos claro.
+- Menos explícito que usar métodos con nombres descriptivos (add, subtract).
+
+3.5 Ejemplo en producción 
+
+https://github.com/rails/rails/blob/main/activesupport/lib/active_support/duration.rb
+
+```
+def +(other)
+  if Duration === other
+    Duration.new(value + other.value, @parts + other.parts)
+  else
+    sum = since(0) + other
+    Duration.new(value, [[:seconds, sum]])
+  end
+end
+```
+
+Aquí Rails sobrecarga el operador + para que puedas sumar objetos Duration (como "2.days + 5.hours") 
+o incluso sumarlos con un número/fecha.
+
+Ejemplo en Rails real:
+time = Time.now
+duration = 2.days + 5.hours
+puts time + duration  # => tiempo actual + 2 días y 5 horas
+
+Esto es operator overloading en producción, usado en Rails para que trabajar con tiempo 
+sea natural y expresivo.
+
+-----------------------------------------------------------------------------------------------------------------
+
+4. Que es class.send en ruby -> le metodo .send 
+	En ruby .send permite invocar dinamicamente un mpetodo de un objecto, 
+	incluso aunque el nombre método se pase como símbolo o cadena. Esto 
+	significa que puedes ejecutar un método cuyo nombre no conoce hasta tiempo de ejecución.
+
+	```ruby
+	"hello".send(:uppercase) -> HELLO
+	```
+
+4.1  Historia del concepto / ¿ Por qué lo inventaron ?
+	El mpetodo ".send" fue introducido en ruby como parte de sus capacidades de metaprogramacion.
+	Ruby está diseñdo para ser muy flexible , y ".send" permite llamar métodos de forma dinámica, 
+	lo que resulta útil en casos como frameworks web (Rails, Sinatr) que dependen de nombres de 
+	metodos definidos por convenciones o generadores en runtime.
+
+	Ejemplo: 
+
+	```
+	class User
+		def greet
+			"hi"
+		end
+	end
+	u = User.new
+	puts u.send(:greet) -> hi
+	```
+
+	Tambien puede usersar con argumentos: 
+
+	```
+	class MathOps
+		def multiply(a,b)
+			a*b
+		end
+	end
+	m = MathOps.new
+	puts m.send(:multiply,2,3) # -> 6
+	```
+4.2  Ventajas: 
+	- Permite flexibilidad extrema en la invocación de étodos
+	- Facilita metaprogramación y DSLs( Domain Specific LAnguages)o
+	- Util para invocar métodos definidos dinamicamente o cargados desde configuración 
+
+4.3  Desventajas: 
+	- Puedes romper la seguridad, ua que ".send" permite accedes tambien a métodos privados.
+	- Hace el código menos claro y más dificil de depurar. 
+	- Puede ar errores en tiempo de ejecución si el método no existe.ch
+
+4.4 Ejemplo en producción 
+	urls produccion de rails:	
+	
+	https://github.com/rails/rails/blob/main/activemodel/lib/active_model/attribute_methods.rb
+
+	En el repositorio oficial de Rails, .send se usa en varios lugares. Un caso muy claro está 
+	en ActiveRecord, donde se utiliza para establecer atributos de modelos dinámicamente.
+
+	Código:
+	rails/rails – activemodel/lib/active_model/attribute_methods.rb (línea de uso de send)
+
+	Ejemplo de uso en Rails:
+
+	def respond_to_without_attributes?(method, include_private = false)
+		if super
+			true
+		else
+			match = match_attribute_method?(method.to_s)
+			match && attribute_method?(match.attr_name) && (!match.predicate? || self.send(match.attr_name).nil?)
+		end
+	end
+
+
+	Aquí Rails usa .send para invocar dinámicamente el atributo correspondiente a un 
+	método como user.name? o user.age?.
+
+	En producción, esto permite que al definir un modelo así:
+
+	class User < ApplicationRecord; end
+
+
+	Puedas llamar dinámicamente:
+
+	user = User.new(name: "Alice")
+	user.name        # => "Alice"
+	user.name?       # => true  (Rails internamente usa .send aquí)
+
+-----------------------------------------------------------------------------------------------------------------
+_. Que es "Operator overloading " en ruby ? 
+_.1  Historia del concepto / ¿ Por qué lo inventaron ?
+_.2  Ventajas: 
+_.3  Desventajas: 
+_.4 Ejemplo en producción 
+
+-----------------------------------------------------------------------------------------------------------------
+_. Que es "Operator overloading " en ruby ? 
+_.1  Historia del concepto / ¿ Por qué lo inventaron ?
+_.2  Ventajas: 
+_.3  Desventajas: 
+_.4 Ejemplo en producción 
+
+-----------------------------------------------------------------------------------------------------------------
+_. Que es "Operator overloading " en ruby ? 
+_.1  Historia del concepto / ¿ Por qué lo inventaron ?
+_.2  Ventajas: 
+_.3  Desventajas: 
+_.4 Ejemplo en producción 
+
+
