@@ -479,7 +479,50 @@ De URL -> Acción (cuando un request llega).
 De Acción -> URL (cuando usas helpers como user_path(@user)).
 
 -----------------------------------------------------------------------------------------------------------------
-6. Que es "Operator overloading " en ruby ? 
+6. Describame los métodos find, fin_by, where de rails. 
+En ruby on rails los metodos find, find_by y whre son parte de ActiveRecord y se usan 
+para consultar registros en la base de datos , pero funcionan de manera distinta.
+
+find:
+- busca un registro "por su clave primaria (id)"
+- Si encuentra el registro, devuelve un objecto 
+- Si no existe, lanza un excepcioon ActiveRecord::RecordNotFoundo
+
+```ruby
+User.find(1) 
+# => devuelve el usuario con id = 1
+```
+
+find_by:
+- Busca el primer registro que cumpla la condición 
+- Si nolo encuentra. devuleve nil (no lanza excepción)
+- Se usa cuando no quieres trabajar con arrays, sino con un solo objeto.
+
+```ruby
+- User.find_by(email: "test@example.com")
+# => devuelve el primer usuario con ese email o nil
+```
+
+where
+- Busca todos los registros que cumplan la condición.
+- Devuelve una colección (ActiveRecord::Relation), que puede seguir siendo 
+encadenada con más condiciones.
+- Si no encuentra registros, devuelve una colección vacía, no nil.
+
+```ruby
+User.where(active: true)
+# => devuelve todos los usuarios activos como colección
+```
+
+Diferencias clave:
+find    -> busca solo por ID y lanza error si no existe.
+find_by -> busca la primera coincidencia y devuelve nil si no encuentra.
+where   -> devuelve una colección de coincidencias (aunque esté vacía).
+
+
+
+
+
 6.1  Historia del concepto / ¿ Por qué lo inventaron ?
 6.2  Ventajas: 
 6.3  Desventajas: 
