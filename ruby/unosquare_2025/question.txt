@@ -520,20 +520,85 @@ find_by -> busca la primera coincidencia y devuelve nil si no encuentra.
 where   -> devuelve una colección de coincidencias (aunque esté vacía).
 
 
-
-
-
-6.1  Historia del concepto / ¿ Por qué lo inventaron ?
-6.2  Ventajas: 
-6.3  Desventajas: 
-6.4 Ejemplo en producción 
-
 -----------------------------------------------------------------------------------------------------------------
-7. Que es "Operator overloading " en ruby ? 
+7. Que son los helper en rails 
+	los helpers on módulos que contienen métodos diseñados para simplificar  la
+	lógica de presentación en las vistas. Sirven para mantener las vistas más limpias,
+	evitando escribir código Ruby complejo directamente en los archivos .erb  o .haml 
+
 7.1  Historia del concepto / ¿ Por qué lo inventaron ?
+	Los helpers fueron introducidos desde las primeras versiones de Rails (2004-2005) 
+	por David Heinemeire Hansson. La idea era separar la lógica de negocio (modelo/controlador) de 
+	la lfica de presentación (vistas) . en las vistas, muchas veces se repetía código 
+	( por ejemplo formatear fechas, mostrar botonoes, contruir formulariios ),
+	lo que generaba duplicacion . 
+
+	Los helpers nacieron para centralizar esas funciones de presentación en modulos reutilizables.
+	Los helpers nacieron para centralizar esas funciones de presentación en modulos reutilizables.
+	Los helpers nacieron para centralizar esas funciones de presentación en modulos reutilizables.
+
+Ejemplo: 
+	Un helper básico para formatear fechas:
+	```ruby
+	# app/helpers/application_helper.rb
+	module ApplicationHelper
+		def formatted_date(date)
+			date.strftme("%d/%m/%Y")
+		end
+	end
+	```
+	Y en la vista .erb:
+
+	```ruby
+	<p>Fecha de creación: <%= formatted_date(@user.created_at) %></p>
+	```
 7.2  Ventajas: 
+	- Mantienen las vistas mas linpias y legibles 
+	- Evitan duplicación de código en vistas 
+	- Reutilizables en todo el proyecto (los helpers son módulos)
+	- Fáciles de testear de forma aislada 
 7.3  Desventajas: 
-7.4 Ejemplo en producción 
+	- Si no se organiza bien , pueden convertirse en un "basurero logico " (todo mezclado)
+	- Exceso de metodos en ApplicationHelper puede dificultar el mantenimiento .
+	- Algunos devs considerna que abusan de los helpers en lugar de usas "decorator" o "view objects"
+	lo cual puede romper la separación de responsabilidades.
+
+
+7.4 Ejemplo en producción (Rails en GitHub)
+
+	https://github.com/rails/rails/blob/main/actionview/lib/action_view/helpers/tag_helper.rb
+
+	Rails trae helpers nativos en su propio código. Un ejemplo real es el módulo TagHelper
+	 en el core de Rails:
+
+	```ruby
+
+		module ActionView
+			module Helpers
+				module TagHelper
+					def content_tag(name, content_or_options_with_block = nil, options = nil, escape = true, &block)
+						...
+					end
+				end
+			end
+		end
+
+	```
+	Este helper (content_tag) permite generar etiquetas HTML en las vistas de Rails de forma sencilla:
+
+	```ruby
+		<%= content_tag(:p, "Hola mundo", class: "greeting") %>
+	```
+
+
+	Produce:
+
+	```ruby
+		<p class="greeting">Hola mundo</p>
+	```
+
+
+	Fuente en producción: rails/actionview/helpers/tag_helper.rb
 
 
 -----------------------------------------------------------------------------------------------------------------
@@ -557,3 +622,16 @@ _.2  Ventajas:
 _.3  Desventajas: 
 _.4 Ejemplo en producción 
 
+```ruby```
+```ruby```
+```ruby```
+```ruby```
+```ruby```
+```ruby```
+```ruby```
+```ruby```
+```ruby```
+```ruby```
+```ruby```
+```ruby```
+```ruby```
