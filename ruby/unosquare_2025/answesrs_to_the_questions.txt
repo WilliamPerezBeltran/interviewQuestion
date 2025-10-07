@@ -602,11 +602,69 @@ Ejemplo:
 
 
 -----------------------------------------------------------------------------------------------------------------
-8. Que es "Operator overloading " en ruby ? 
+8. Que es Api-Pagination en Ruby on Rails ? 
 8.1  Historia del concepto / ¿ Por qué lo inventaron ?
 8.2  Ventajas: 
 8.3  Desventajas: 
 8.4 Ejemplo en producción 
+
+# Api-Pagination en Ruby on Rails
+
+## Concepto
+
+`api-pagination` es un gem para Ruby on Rails que facilita la implementación de paginación en APIs. En lugar de incluir 
+información de paginación en el cuerpo de la respuesta, lo hace en los encabezados HTTP, siguiendo el 
+estándar [RFC-8288](https://www.rfc-editor.org/rfc/rfc8288.html). Esto permite una comunicación más eficiente entre el 
+servidor y el cliente, especialmente en aplicaciones que consumen grandes volúmenes de datos.
+
+## Historia del concepto / Por qué lo inventaron
+
+La necesidad de paginación en APIs surgió con el aumento de aplicaciones que manejan grandes cantidades de datos. 
+Incluir toda la información en una sola respuesta puede sobrecargar tanto al servidor como al cliente. `api-pagination` 
+fue creado para mejorar el rendimiento y la escalabilidad de las aplicaciones Rails, moviendo la información de paginación 
+a los encabezados HTTP.
+
+## Ejemplo
+
+Instalación de los gems necesarios:
+
+```ruby
+gem 'api-pagination'
+gem 'pagy' # o 'kaminari', 'will_paginate'
+```
+
+En el controlador:
+
+```ruby
+include ApiPagination::Rails
+
+def index
+  @posts = Post.page(params[:page]).per(10)
+  render json: @posts
+end
+```
+
+Esto genera encabezados como `X-Total`, `X-Per-Page` y `X-Page`, proporcionando información sobre la paginación sin 
+sobrecargar el cuerpo de la respuesta.
+
+## Ventajas
+
+* **Eficiencia:** Reduce la carga en el cuerpo de la respuesta al mover la información de paginación a los encabezados.
+* **Compatibilidad:** Funciona con Rails API y Grape.
+* **Configurabilidad:** Compatible con `pagy`, `kaminari` o `will_paginate`.
+* **Cumplimiento de estándares:** Sigue el estándar RFC-8288 para enlaces web.
+
+## Desventajas
+
+* **Dependencias adicionales:** Requiere instalar gemas como `pagy`, `kaminari` o `will_paginate`.
+* **Complejidad en la configuración:** Puede necesitar ajustes en proyectos existentes.
+* **Limitaciones en clientes:** Algunos clientes HTTP podrían no manejar correctamente los encabezados de paginación.
+
+## Ejemplo en producción
+
+Una API que devuelve una lista de productos puede usar `api-pagination` para paginar los resultados. Esto reduce el 
+tiempo de respuesta y la carga en el servidor. La información de paginación en los encabezados permite al cliente navegar 
+entre páginas sin procesar grandes cantidades de datos de una sola vez.
 
 -----------------------------------------------------------------------------------------------------------------
 _. Que es "Operator overloading " en ruby ? 
