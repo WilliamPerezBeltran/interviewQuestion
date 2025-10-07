@@ -1474,11 +1474,101 @@ En una aplicación Rails de comercio electrónico, la autenticación permite que
 
 
 -----------------------------------------------------------------------------------------------------------------
-17. Que es "Operator overloading " en ruby ? 
+17.Implementación de Sesiones, Cookies y Autenticación en Ruby on Rails
 17.1  Historia del concepto / ¿ Por qué lo inventaron ?
 17.2  Ventajas: 
 17.3  Desventajas:
 17.4 Ejemplo en producción 
+
+````markdown
+# Implementación de Sesiones, Cookies y Autenticación en Ruby on Rails
+
+## Concepto
+- **Sesión:** Mecanismo que permite mantener información del usuario entre diferentes solicitudes HTTP.
+- **Cookies:** Archivos pequeños que se almacenan en el navegador del cliente para guardar información persistente, como tokens de sesión.
+- **Autenticación:** Proceso de verificar la identidad de un usuario para permitir acceso a recursos protegidos.
+
+## Historia del concepto / Por qué lo inventaron
+- Las sesiones y cookies fueron creadas para mantener el estado en la web, ya que HTTP es un protocolo sin estado (stateless).
+- La autenticación se desarrolló para garantizar que solo los usuarios autorizados puedan acceder a ciertos recursos.
+- Ruby on Rails facilita esto mediante métodos integrados, como `has_secure_password` y la gema `Devise` para autenticación.
+
+## Ejemplo
+1. **Generar modelo de usuario con autenticación:**
+```bash
+rails generate model User email:string password_digest:string
+rails db:migrate
+````
+
+2. **Agregar seguridad de contraseña:**
+
+```ruby
+# app/models/user.rb
+class User < ApplicationRecord
+  has_secure_password
+end
+```
+
+3. **Controlador de sesiones:**
+
+```ruby
+# app/controllers/sessions_controller.rb
+class SessionsController < ApplicationController
+  def new
+  end
+
+  def create
+    user = User.find_by(email: params[:email])
+    if user&.authenticate(params[:password])
+      session[:user_id] = user.id
+      cookies.signed[:user_id] = { value: user.id, expires: 2.weeks.from_now }
+      redirect_to root_path, notice: 'Logged in successfully'
+    else
+      flash.now[:alert] = 'Invalid email or password'
+      render :new
+    end
+  end
+
+  def destroy
+    session.delete(:user_id)
+    cookies.delete(:user_id)
+    redirect_to login_path, notice: 'Logged out successfully'
+  end
+end
+```
+
+4. **Rutas:**
+
+```ruby
+# config/routes.rb
+Rails.application.routes.draw do
+  get 'login', to: 'sessions#new'
+  post 'login', to: 'sessions#create'
+  delete 'logout', to: 'sessions#destroy'
+  root 'home#index'
+end
+```
+
+## Ventajas
+
+* Mantener el estado del usuario entre solicitudes.
+* Seguridad en la autenticación mediante `has_secure_password` y cookies firmadas.
+* Rails ofrece integraciones listas para usar y gemas como Devise para acelerar la implementación.
+
+## Desventajas
+
+* Manejo de sesiones requiere cuidado con la seguridad (XSS, CSRF).
+* Las cookies pueden ser manipuladas si no están firmadas o cifradas.
+* Autenticación personalizada requiere pruebas y validaciones adicionales.
+
+## Ejemplo en producción
+
+* Una aplicación web con usuarios registrados donde al iniciar sesión se crea una sesión y se almacena un cookie cifrada en el navegador.
+* La información de la sesión permite al usuario navegar por la aplicación sin necesidad de autenticarse nuevamente en cada página.
+* Rails puede usar Redis o Memcached para almacenar sesiones de manera más eficiente en aplicaciones de gran escala.
+
+```
+```
 
 -----------------------------------------------------------------------------------------------------------------
 18. Que es "Operator overloading " en ruby ? 
