@@ -1,0 +1,47 @@
+
+* preguntas de la entrevista  
+
+	1. Imagínate que trabajas en un banco y tienes que implementar una transferencia de fondos entre 
+	dos cuentas.
+		
+		a. Restarle dinero a la cuenta de origen y depositarla a la cuenta destino. ¿Cómo se puede 
+		evitar el siguiente problema de inconsistencia de datos? El problema aquí es que, al momento 
+		de hacer la operación, el dinero de la cuenta origen se reste, pero no se deposite a la cuenta 
+		destino. 
+
+		 ¿Cómo evitamos ese problema de inconsistencia?
+
+	2. Si lo envolsamos simplemente a un proceso de bases de datos, ¿cómo lo podrías ejecutar?
+
+	3. En Buk (la empresa) tenemos el módulo de selección de personal. Este es el módulo donde 
+	cargamos a todos los candidatos que están en proceso con nosotros. El problema ahí es que, 
+	a más candidatos que cargamos, la plataforma se volvió más lenta. Ahí, ¿qué tipo de problema 
+	está pasando y cómo se puede solucionar?
+
+	4. Cuéntame del proyecto de ingeniería de software más importante en el que hayas participado.
+	Solo escoge uno y cuéntame de qué trataba.
+
+	5. ¿Cuál es el principal dolor que buscaba resolver el proyecto que acabas de contar?
+
+	6. ¿Cómo te enteras de los dolores del cliente? ¿Cómo te llega la información?
+
+	7. ¿Cómo te das cuenta de que tu trabajo está impactando en los objetivos del negocio?
+
+	8. ¿Cómo te mantienes informado del roadmap del proyecto? ¿Cómo sabes que va avanzando 
+	de acuerdo a lo planteado?
+
+	9. ¿Cuáles son esas consideraciones técnicas que tomas en cuenta para que tu código o 
+	proyecto pueda quedar bien con el paso del tiempo?
+
+	10. Desde tu experiencia, ¿qué ventajas da testing en las aplicaciones ?
+
+	11. Normalmente, ¿cómo te encargas de la deuda técnica dentro del proyecto?
+
+	12. ¿Cómo te mantienes actualizado en lo que haces?
+
+	13. ¿Qué haces cuando te enfrentas a una situación nueva y no sabes cómo resolver el problema?
+
+	14. ¿Cómo compartes tu experiencia con ingenieros con menos experiencia que tú?
+	¿Cómo haces que ellos puedan aprender también de ti?
+
+	15. ¿Qué importancia piensas que tiene para ti un code review dentro del equipo de ingeniería?
